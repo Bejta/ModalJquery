@@ -21,7 +21,7 @@ namespace Modal_CRUD_MVC.Controllers
         public ActionResult AddEditRecord (int? id)
         {
             //Check if Ajax
-            if (Request.IsAjaxRequest())
+            if (!Request.IsAjaxRequest())
             {
                 if (id != null)
                 {
